@@ -82,6 +82,7 @@ a::after{
     transition:width 0.5s ease;
 }
 
+
 a:hover::after{
     width:100%;
 }
@@ -99,14 +100,14 @@ a:hover::after{
 #productcontainer main img{
     height: 250px;
     width: 350px;
-    background-color:antiquewhite;
+    background-color:#f6f1ee;
     border-radius: 20px 02px 0px 0px;
 }
 
 #image{
     height: 400px;
     width: 350px;
-    background-color: cadetblue;
+    background-color:#dde5d1;
     margin-top: 20px;
     border-radius: 20px;
 }
@@ -125,9 +126,23 @@ a:hover::after{
 }
 
 #productcontainer main button{
-    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 1px;
+    margin: 2px;
+    padding: 3px;
+    color: white;
+    font-weight: bold;
+    background-color: #7a9e7e;
     border-radius: 5px;
 
+}
+#details_button:hover{
+    background-color: #f3efea;
+    color: #6b4f4f;
+}
+#title{
+    color: #2b2b2b;
 }
 
 #groups{
@@ -147,7 +162,14 @@ a:hover::after{
     height: 5px;
     background-color: black;
 }
-  
+#rating_box{
+    padding: 3px;
+    margin: 2px;
+    color: #C76D8a;
+    font-weight: bold;
+     
+}
+
  
 @media (max-width:750px){
     #navigation_option div,#search_box,#cart{
@@ -190,6 +212,7 @@ a:hover::after{
         padding-left: 320px;
     }
 }
+
 
 
  
