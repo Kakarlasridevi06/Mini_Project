@@ -49,8 +49,10 @@ function details(productId){
     console.log(productId);
 
     localStorage.setItem("productId",productId);
-    window.location.href="../viewDetails/viewDetails.html"
+    // window.location.href="../viewDetails/viewDetails.html";
+    window.location.href="viewDetails.html"
     
 }
+
 
 
