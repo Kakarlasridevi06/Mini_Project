@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+     <form action="" id="formContainer">
+        <div  class="form-group" id="account">
+            <h1>Create Account</h1><br>
+            <p>Please fill your details to registration</p> <br>
+        </div>
+        <div class="form-group">
+            <label for="">Full Name</label> <br>
+            <input id="name" type="text" placeholder="Name" required> <br>
+        </div> 
+        <div class="form-group">
+        <label for="">Email Address</label> <br>
+        <input id="email" type="email" placeholder="Email"> <br>
+        <p id="errorMail"></p>
+        </div>
+        <div class="form-group">
+            <label for="">Password</label> <br>
+            <input id="password" type="password" placeholder="Password" minlength="6" maxlength="15" required  > <br>
+            <p id="errorPas"></p>
+        </div>
+       
+       <div class="form-group">
+      <label for="">Mobile Number</label> <br>
+       <input id="mobile" type="tel" placeholder="Mobile Number" required> <br>
+       
+       </div>
+    
+       <div>
+        <div> <input id="submit" value="Register" type="submit"> <br>
+       </div>
+        <p style="color: gray;">Already You have a account <a href="login.html" style="color: black; font-weight: bold;">Sign In</a></p>
+    </form>
+
+    <script src="registration.js"></script>
+</body>
+</html>
