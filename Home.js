@@ -18,13 +18,15 @@ function displayProduct(prod) {
         <main>
         <div id="image" >
         <img src="${val.thumbnail}"/>
-        <h3>${val.title}</h3>
+        <div id="block"> 
+        <h3 id="title">${val.title}</h3>
         <div id ="rating_box">
         <p>Rating:${val.rating}</p>
         <p>Price:${Math.round((val.price)*90)}</p>
         <div>
         <p>InStoke:${val.stoke}</p>
-        <button onclick="details(${val.id})">Details</button>
+        <button id="details_button" onclick="details(${val.id})">Details</button>
+        </div>
         </div>
         </div>
         </div>
@@ -53,6 +55,7 @@ function details(productId){
     window.location.href="viewDetails.html"
     
 }
+
 
 
 
