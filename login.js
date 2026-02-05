@@ -27,8 +27,9 @@ console.log(document.getElementById("formContainer"));
 
     if (storedData && storedData.email === email && storedData.password === password) {
         alert("Login Successfully!!");
-        window.location.href = "../Home/Home.html";
+        window.location.href = "Home.html";
     } else {
         alert("Enter valid Credentials!");
     }
 });
+
