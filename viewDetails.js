@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded",()=>{
             </div>
         </main>`
         document.getElementById("Back to home").addEventListener("click",()=>{
-            window.location.href="../Home/Home.html";
+            // window.location.href="../Home/Home.html";
+            window.location.href="Home.html";
         })
         document.getElementById("Add to cart").addEventListener("click",()=>{
             addToCart(selectedProduct);
@@ -56,4 +57,5 @@ function addToCart(product){
     cart.push(product)
     localStorage.setItem("cart",JSON.stringify(cart))
     alert("Product added succsessfully🥳!!!")
+
 }
